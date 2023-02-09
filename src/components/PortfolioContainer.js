@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Header from "./Header";
 // import pages and other components below
 import About from "./pages/About";
+import Project from "./pages/Project";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
 
 export default function PortfolioContainer () {
     // TODO: write useState for current page here
@@ -11,6 +14,15 @@ export default function PortfolioContainer () {
     const renderPage = () => {
         if (currentPage === 'About') {
             return <About />
+        }
+        if (currentPage === 'Projects') {
+            return <Project />
+        }
+        if (currentPage === 'Resume') {
+            return <Resume />
+        }
+        if (currentPage === "Contact") {
+            return <Contact />
         }
     }
 
