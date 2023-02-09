@@ -4,6 +4,7 @@ import Header from "./Header";
 
 export default function PortfolioContainer () {
     // TODO: write useState for current page here
+    const [currentPage, setCurrentPage] = useState('About');
 
     // TODO: write logic to  render page here
 
