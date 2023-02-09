@@ -1,9 +1,8 @@
+import PortfolioContainer from "./components/PortfolioContainer";
 
 function App() {
   return (
-    <div>
-      {/* Components go here */}
-    </div>
+    <PortfolioContainer />
   );
 }
 
