@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 // import pages and other components below
 import About from "./pages/About";
 import Project from "./pages/Project";
@@ -32,11 +33,15 @@ export default function PortfolioContainer () {
     return (
         <div className="container h-full bg-primary">
             {/* Components/Pages that go inside of portfolio container go here */}
+
             {/* Header */}
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+
             {/* Pages */}
             {renderPage()}
+
             {/* Footer */}
+            <Footer />
         </div>
     )
 
