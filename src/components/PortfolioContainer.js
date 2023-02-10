@@ -31,7 +31,7 @@ export default function PortfolioContainer () {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div className="container h-full bg-primary">
+        <div className="container flex flex-col flex-grow min-h-screen bg-primary">
             {/* Components/Pages that go inside of portfolio container go here */}
 
             {/* Header */}
@@ -41,7 +41,7 @@ export default function PortfolioContainer () {
             {renderPage()}
 
             {/* Footer */}
-            <Footer />
+            <Footer /> 
         </div>
     )
 
