@@ -23,3 +23,12 @@
 body {
     background-color: #00204a;
 }
+
+.quat-light {
+ background-color: #d9faffb0;
+}
+
+.prime-light {
+    background-color: #546375;
+    color:  #00204a9f;
+}

@@ -4,7 +4,7 @@ export default function Footer() {
 
     return (
         <div>
-            <ul className="list-none flex justify-center mx-2 my-5">
+            <ul className="list-none flex justify-center mx-2 mt-5">
                 <li>
                     <a
                         href="https://github.com/ggorosave"
@@ -33,6 +33,7 @@ export default function Footer() {
                     </a>
                 </li>
             </ul>
+            <p className="text-quaternary text-center my-1">&copy; 2022 Grant Gorosave</p>
         </div>
     )
 }

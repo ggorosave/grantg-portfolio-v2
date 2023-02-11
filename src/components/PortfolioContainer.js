@@ -31,7 +31,8 @@ export default function PortfolioContainer () {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div className="container flex flex-col flex-grow min-h-screen bg-primary">
+        // flex styling here is meant to keep the footer at the bottom of the page
+        <div className="container flex flex-col flex-grow justify-between min-h-screen bg-primary">
             {/* Components/Pages that go inside of portfolio container go here */}
 
             {/* Header */}
