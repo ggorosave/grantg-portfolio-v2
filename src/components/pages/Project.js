@@ -55,8 +55,10 @@ export default function Project() {
             </ul>
 
             {/* Project Container */}
-            <section className="bg-secondary p-5 flex grow h-screen w-full md:w-auto md:rounded-r-lg md:rounded-bl-lg">
-                <div className="bg-quaternary grow rounded-lg">
+            <section className="bg-secondary p-5 flex grow h-fit w-full rounded-b-lg md:w-auto md:rounded-r-lg md:rounded-bl-lg">
+
+                {/* Project Card */}
+                <div className="bg-quaternary grow rounded-lg flex flex-col">
 
                     {/* Project Image */}
                     <figure>
@@ -77,9 +79,42 @@ export default function Project() {
                         <p className="mt-3">No Budge is full stack application that takes in user data and helps them keep track of their monthly income and expenses. I worked on this site with two others and we utilized Handlebars, Express, and Express-session to build it.</p>
 
                         {/* Technologies Used */}
+                        <div className="mt-5">
 
-                        
+                            {/* Header */}
+                            <h4 className="text-md font-bold">Technologies Used:</h4>
+
+                            {/* Tech List */}
+                            <p className="mt-3">HTML5, CSS3, Bootstrap, JavaScript, Handlebars.js, Node.js, Express, Dotenv, Bycrypt, Charts.js</p>
+
+                        </div>
+
                         {/* Links */}
+                        <div className="flex mt-5 justify-between">
+
+                            {/* GitHub Repo */}
+                            <a
+                                href="https://github.com/ggorosave/No-Budge-Budget-Tracker"
+                                rel="noreferrer"
+                                target="_blank"
+                                className="block text-primary border-primary border-2 px-2 py-1 rounded-3xl"
+                            >
+                                <i className="fa-brands fa-github mr-2 text-lg"></i>
+                                GitHub
+                            </a>
+
+                            {/* Webpage */}
+                            <a
+                                href="https://no-budge.herokuapp.com/"
+                                rel="noreferrer"
+                                target="_blank"
+                                className="block text-primary border-primary border-2 px-2 py-1 rounded-3xl"
+                            >
+                                <i className="fa-solid fa-up-right-from-square mr-2 text-lg"></i>
+                                Webpage
+                            </a>
+
+                        </div>
 
                     </div>
 
