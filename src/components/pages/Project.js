@@ -66,7 +66,22 @@ export default function Project() {
                             alt="web application that displays budget tables"
                         />
                     </figure>
-                    <h3>No Budge Budget Tracker</h3>
+
+                    {/* Title and Description Container */}
+                    <div className="mx-4 my-3 text-primary">
+
+                        {/* Title */}
+                        <h3 className="text-lg font-bold">No Budge Budget Tracker</h3>
+
+                        {/* Description */}
+                        <p className="mt-3">No Budge is full stack application that takes in user data and helps them keep track of their monthly income and expenses. I worked on this site with two others and we utilized Handlebars, Express, and Express-session to build it.</p>
+
+                        {/* Technologies Used */}
+
+                        
+                        {/* Links */}
+
+                    </div>
 
                 </div>
             </section>
