@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ProjectCard({ currentProject, handleProjectChange, project }) {
+export default function ProjectCard({ project }) {
 
     return (
 
@@ -13,8 +13,8 @@ export default function ProjectCard({ currentProject, handleProjectChange, proje
                     <figure>
                         <img
                             className="w-72 my-5 mx-auto rounded-lg lg:w-full lg:ml-4"
-                            src="/images/manage-transactions.JPG"
-                            alt="web application that displays budget tables"
+                            src={project.image.src}
+                            alt={project.image.alt}
                         />
                     </figure>
 
@@ -25,10 +25,10 @@ export default function ProjectCard({ currentProject, handleProjectChange, proje
                         <div>
 
                             {/* Title */}
-                            <h3 className="text-lg font-bold">No Budge Budget Tracker</h3>
+                            <h3 className="text-lg font-bold">{project.title}</h3>
 
                             {/* Description */}
-                            <p className="mt-3">No Budge is full stack application that takes in user data and helps them keep track of their monthly income and expenses. I worked on this site with two others and we utilized Handlebars, Express, and Express-session to build it.</p>
+                            <p className="mt-3">{project.description}</p>
 
                             {/* Technologies Used */}
                             <div className="mt-5">
@@ -37,7 +37,7 @@ export default function ProjectCard({ currentProject, handleProjectChange, proje
                                 <h4 className="text-md font-bold">Technologies Used:</h4>
 
                                 {/* Tech List */}
-                                <p className="mt-3">HTML5, CSS3, Bootstrap, JavaScript, Handlebars.js, Node.js, Express, Dotenv, Bycrypt, Charts.js</p>
+                                <p className="mt-3">{project.technologies}</p>
 
                             </div>
                         </div>
@@ -47,7 +47,7 @@ export default function ProjectCard({ currentProject, handleProjectChange, proje
 
                             {/* GitHub Repo */}
                             <a
-                                href="https://github.com/ggorosave/No-Budge-Budget-Tracker"
+                                href={project.repo}
                                 rel="noreferrer"
                                 target="_blank"
                                 className="block text-primary border-primary border-2 px-2 py-1 rounded-3xl lg:mr-2"
@@ -58,7 +58,7 @@ export default function ProjectCard({ currentProject, handleProjectChange, proje
 
                             {/* Webpage */}
                             <a
-                                href="https://no-budge.herokuapp.com/"
+                                href={project.app}
                                 rel="noreferrer"
                                 target="_blank"
                                 className="block text-primary border-primary border-2 px-2 py-1 rounded-3xl lg:mr-1"

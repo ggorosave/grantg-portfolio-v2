@@ -57,7 +57,7 @@ const projects = {
         title: "Coming Soon",
         description: "A really cute bear",
         image: {
-            src: "https://placebear.com/400/400",
+            src: "https://placebear.com/500/500",
             alt: "a bear"
         },
         technologies: "Honey, love, the bear necessities",
