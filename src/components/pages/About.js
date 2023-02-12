@@ -13,7 +13,7 @@ export default function About() {
             </figure>
             <div className="my-3">
                 <h2 className="bg-secondary text-quaternary text-xl px-5 py-2 w-24 mb-0 rounded-t-lg md:text-2xl md:text-center md:w-32">About</h2>
-                <p className="bg-secondary text-quaternary text-lg mt-0 px-5 py-3 rounded-b-lg rounded-tr-lg md:text-xl">I’m an ex-teacher, newbie web developer interested in designing and working on websites for educational organizations and institutions. I like working with HTML and CSS, and I’m currently in the process of learning JavaScript. I have some interest in building browser games that teachers can customize for their classrooms and enhance student engagement. If you have any questions or want to get in touch, contact me via one of the methods below.</p>
+                <p className="bg-secondary text-quaternary text-lg mt-0 px-5 py-3 rounded-b-lg rounded-tr-lg md:text-xl">I’m an ex-teacher, newbie web developer interested in being a full stack MERN developer for educational organizations and institutions. I have some interest in building browser games that teachers can customize for their classrooms and enhance student engagement. If you have any questions or want to get in touch, contact me via one of the methods below.</p>
             </div>
         </div>
     )

@@ -1,69 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
-// projects object 
-import projects from "../projectData";
-
-export default function Project() {
-
-    // project state
-    const [currentProject, setCurrentProject] = useState('Project 1');
-
-    const renderProject = () => {
-
-        
-    }
-
-    const handleProjectChange = (project) => setCurrentProject(project);
+export default function ProjectCard({ currentProject, handleProjectChange, project }) {
 
     return (
-        <div className="mt-28 mx-3 flex flex-col lg:flex-row items-start">
-            <ul className="list-none flex lg:flex-col">
 
-                {/* Project Tabs */}
-                <li>
-                    <a
-                        className="bg-secondary text-quaternary ssp text-md text-center mr-0.5 lg:mr-0 lg:mb-0.5 md:text-xl font-semibold align-middle block px-2 py-1 rounded-t-lg md:px-3 md:py-2 lg:rounded-tr-none  lg:rounded-l-lg"
-                        href="#project1"
-                    >
-                        Project 1
-                    </a>
-                </li>
-                <li>
-                    <a
-                        className="bg-tertiary text-prim-light ssp text-md text-center mr-0.5 lg:mr-0 lg:mb-0.5 md:text-xl font-semibold align-middle block px-2 py-1 rounded-t-lg md:px-3 md:py-2 lg:rounded-tr-none  lg:rounded-l-lg"
-                        href="#project2"
-                    >
-                        Project 2
-                    </a>
-                </li>
-                <li>
-                    <a
-                        className="bg-tertiary text-prim-light ssp text-md text-center mr-0.5 lg:mr-0 lg:mb-0.5 md:text-xl font-semibold align-middle block px-2 py-1 rounded-t-lg md:px-3 md:py-2 lg:rounded-tr-none  lg:rounded-l-lg"
-                        href="#project2"
-                    >
-                        Project 3
-                    </a>
-                </li>
-                <li>
-                    <a
-                        className="bg-tertiary text-prim-light ssp text-md text-center mr-0.5 lg:mr-0 lg:mb-0.5 md:text-xl font-semibold align-middle block px-2 py-1 rounded-t-lg md:px-3 md:py-2 lg:rounded-tr-none  lg:rounded-l-lg"
-                        href="#project2"
-                    >
-                        Project 4
-                    </a>
-                </li>
-                <li>
-                    <a
-                        className="bg-tertiary text-prim-light ssp text-md text-center md:text-xl font-semibold align-middle block px-2 py-1 rounded-t-lg md:px-3 md:py-2 lg:rounded-tr-none  lg:rounded-l-lg"
-                        href="#project2"
-                    >
-                        Project 5
-                    </a>
-                </li>
-            </ul>
-
-            {/* Project Container */}
-            <section className="bg-secondary p-5 flex grow h-fit w-full rounded-b-lg md:w-auto md:rounded-r-lg md:rounded-bl-lg">
+        <section className="bg-secondary p-5 flex grow h-fit w-full rounded-b-lg md:w-auto md:rounded-r-lg md:rounded-bl-lg">
 
                 {/* Project Card */}
                 <div className="bg-quaternary grow rounded-lg flex flex-col lg:flex-row">
@@ -132,6 +73,6 @@ export default function Project() {
 
                 </div>
             </section>
-        </div>
     )
+
 };
