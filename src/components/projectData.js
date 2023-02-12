@@ -53,6 +53,7 @@ const projects = {
     },
 
     // Project 5
+    // TODO: Add new project here
     p5: {
         title: "Coming Soon",
         description: "A really cute bear",
