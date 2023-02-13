@@ -3,23 +3,12 @@ import React from "react";
 export default function Resume() {
 
     return (
-        <div className="mt-32 mx-3 bg-secondary rounded-lg">
-
-            {/* Link to download resume */}
-            <a
-                href="https://docs.google.com/document/d/1SX0MEQhhCm-Nw9SSEKVfDXpaM3W1D2EZr0psMSdF6UI/edit?usp=sharing"
-                target="
-            "
-                rel="noreferrer"
-                className="bg-quaternary ml-3 mt-3"
-            >
-                View Resume
-            </a>
+        <div className="mt-32 mx-auto bg-secondary text-primary rounded-lg flex flex-col w-fit">
 
             {/* List of proficencies */}
-            <div className="flex">
+            <div className="flex flex-col md:flex-row">
                 {/* Front End Proficiencies */}
-                <div className="bg-quaternary m-3 p-3 rounded-lg w-3/6">
+                <div className="bg-quaternary m-3 p-3 rounded-lg">
                     <h3 className="text-xl font-semibold">Front End Proficiencies:</h3>
                     <ul className="list-disc ml-6 text-lg">
                         <li>
@@ -47,7 +36,7 @@ export default function Resume() {
                 </div>
 
                 {/* Back End Proficiencies */}
-                <div className="bg-quaternary m-3 p-3 rounded-lg w-3/6">
+                <div className="bg-quaternary m-3 p-3 rounded-lg">
                     <h3 className="text-xl font-semibold">Back End Proficiencies:</h3>
                     <ul className="list-disc ml-6 text-lg ">
                         <li>
@@ -74,6 +63,18 @@ export default function Resume() {
                     </ul>
                 </div>
             </div>
+
+            {/* Link to download resume */}
+            <a
+                href="https://docs.google.com/document/d/19QbNGixKBCBFlSWULJdnwBkiq8_KGJrGhZWoXlSYZs4/edit?usp=sharing"
+                target="
+            "
+                rel="noreferrer"
+                className="bg-quaternary text-lg font-semibold block mx-auto mb-3 py-1 px-3 w-fit rounded-3xl self-end"
+            >
+                <i class="fa-brands fa-google-drive mr-2"></i>
+                View Full Resume
+            </a>
 
         </div>
     )
