@@ -2,6 +2,34 @@ import React from "react";
 
 export default function Resume() {
 
+    // Code written using help from the source below
+    // SOURCE: https://www.geeksforgeeks.org/how-to-download-pdf-file-in-reactjs/
+    const downloadFile = () => {
+
+        // fetch request targeting the document in the public folder
+        fetch('/docs/Grant Gorosave_Web Dev Resume.pdf')
+            .then(response => {
+                // creates a blob-->blobs can represent data that isn't a javascript native format, like the resume file
+                response.blob().then(blob => {
+
+                    // creates a URL that represents the object in the parameters, i.e. the pdf
+                    const resumeUrl = window.URL.createObjectURL(blob);
+
+                    // creates a link element
+                    let downloadLink = document.createElement('a');
+
+                    // sets the href of the link to the resume url created above
+                    downloadLink.href = resumeUrl;
+
+                    // downloads the file using the download function of the downloads API
+                    downloadLink.download = '/docs/Grant Gorosave_Web Dev Resume.pdf'
+
+                    // fires a click of the link object created in this function
+                    downloadLink.click();
+                })
+            })
+    }
+
     return (
         <div className="mt-32 mx-auto bg-secondary text-primary rounded-lg flex flex-col w-fit">
 
@@ -65,16 +93,13 @@ export default function Resume() {
             </div>
 
             {/* Link to download resume */}
-            <a
-                href="https://docs.google.com/document/d/19QbNGixKBCBFlSWULJdnwBkiq8_KGJrGhZWoXlSYZs4/edit?usp=sharing"
-                target="
-            "
-                rel="noreferrer"
-                className="bg-quaternary text-lg font-semibold block mx-auto mb-3 py-1 px-3 w-fit rounded-3xl self-end"
+            <button
+                className="bg-quaternary text-lg font-semibold block mx-auto mb-3 py-1 px-3 w-fit rounded-3xl self-end active:bg-primary active:text-quaternary active:border-2 active:border-quaternary focus:bg-primary focus:text-quaternary focus:border-2 focus:border-quaternary"
+                onClick={downloadFile}
             >
-                <i class="fa-brands fa-google-drive mr-2"></i>
-                View Full Resume
-            </a>
+                <i className="fa-solid fa-download mr-2"></i>
+                Download Resume
+            </button>
 
         </div>
     )
