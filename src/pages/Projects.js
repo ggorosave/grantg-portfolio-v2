@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import ProjectCard from "./ProjectCard";
-import ProjectTabs from "./ProjectTabs";
+import ProjectCard from "../components/ProjectCard";
+import ProjectTabs from "../components/ProjectTabs";
 
 // projects object 
-import projects from "../projectData";
+import projects from "../utils/projectData";
 
 export default function Project() {
 
