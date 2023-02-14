@@ -33,7 +33,7 @@ export default function Footer() {
                     </a>
                 </li>
             </ul>
-            <p className="text-quaternary text-center my-1">&copy; 2022 Grant Gorosave</p>
+            <p className="text-quaternary text-center my-1">&copy; 2023 Grant Gorosave</p>
         </div>
     )
 }
