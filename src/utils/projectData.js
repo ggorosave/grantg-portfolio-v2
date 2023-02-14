@@ -55,15 +55,15 @@ const projects = {
     // Project 5
     // TODO: Add new project here
     p5: {
-        title: "Coming Soon",
-        description: "A really cute bear",
+        title: "Text Editor PWA",
+        description: "Text Editor PWA is a progressive web application built with Node.js, Express, Webpack, Workbox, a whole lot of plugins, JavaScript, HTML, and CSS. The application was deployed through Heroku. The front end emulates a text editor like VSCode.",
         image: {
-            src: "https://placebear.com/500/500",
-            alt: "a bear"
+            src: "/images/text-editor-pwa.png",
+            alt: "porject 4"
         },
         technologies: "Honey, love, the bear necessities",
-        repo: "https://placebear.com/",
-        app: "https://placebear.com/"
+        repo: "https://github.com/ggorosave/Text-Editor-PWA",
+        app: "https://ggorosave-text-editor.herokuapp.com/"
     }
 };
 
