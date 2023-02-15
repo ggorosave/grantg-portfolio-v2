@@ -50,7 +50,7 @@ export default function ProjectCard({ project }) {
                                 href={project.repo}
                                 rel="noreferrer"
                                 target="_blank"
-                                className="block text-primary border-primary border-2 px-2 py-1 rounded-3xl lg:mr-2"
+                                className="block text-primary border-primary border-2 px-2 py-1 rounded-3xl lg:mr-2 hover:bg-primary hover:text-quaternary hover:border-2 hover:border-quaternary hover:transition-colors hover:duration-150 hover:ease-out active:scale-90 active:bg-tertiary"
                             >
                                 <i className="fa-brands fa-github mr-2 text-lg"></i>
                                 GitHub
@@ -61,7 +61,7 @@ export default function ProjectCard({ project }) {
                                 href={project.app}
                                 rel="noreferrer"
                                 target="_blank"
-                                className="block text-primary border-primary border-2 px-2 py-1 rounded-3xl lg:mr-1"
+                                className="block text-primary border-primary border-2 px-2 py-1 rounded-3xl lg:mr-1 hover:bg-primary hover:text-quaternary hover:border-2 hover:border-quaternary hover:transition-colors hover:duration-150 hover:ease-out active:scale-90 active:bg-tertiary"
                             >
                                 <i className="fa-solid fa-up-right-from-square mr-2 text-lg"></i>
                                 Webpage

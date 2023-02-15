@@ -47,7 +47,7 @@ export default function Contact() {
                 </label>
                 <button
                     type="submit"
-                    className="bg-quaternary px-4 py-1 rounded-2xl w-full font-semibold"
+                    className="bg-quaternary px-4 py-1 rounded-2xl w-full font-semibold hover:bg-primary hover:text-quaternary hover:transition-colors hover:duration-150 hover:ease-out active:bg-secondary"
                     onClick={handleFormSubmit}
                 >
                     Submit

@@ -94,7 +94,7 @@ export default function Resume() {
 
             {/* Link to download resume */}
             <button
-                className="bg-quaternary text-lg font-semibold block mx-auto mb-3 py-1 px-3 w-fit rounded-3xl self-end active:bg-primary active:text-quaternary active:border-2 active:border-quaternary focus:bg-primary focus:text-quaternary focus:border-2 focus:border-quaternary"
+                className="bg-quaternary text-lg font-semibold block mx-auto mb-3 py-1 px-3 w-fit rounded-3xl self-end active:bg-primary active:text-quaternary  focus:bg-primary focus:text-quaternary hover:bg-primary hover:text-quaternary hover:transition-colors hover:duration-150 hover:ease-out active:scale-90 active:bg-tertiary"
                 onClick={downloadFile}
             >
                 <i className="fa-solid fa-download mr-2"></i>
