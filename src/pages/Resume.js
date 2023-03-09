@@ -7,7 +7,7 @@ export default function Resume() {
     const downloadFile = () => {
 
         // fetch request targeting the document in the public folder
-        fetch('/docs/Grant Gorosave_Web Dev Resume.pdf')
+        fetch('/docs/Grant Gorosave_Web Dev Resume(03-09-2023).pdf')
             .then(response => {
                 // creates a blob-->blobs can represent data that isn't a javascript native format, like the resume file
                 response.blob().then(blob => {
@@ -22,7 +22,7 @@ export default function Resume() {
                     downloadLink.href = resumeUrl;
 
                     // downloads the file using the download function of the downloads API
-                    downloadLink.download = '/docs/Grant Gorosave_Web Dev Resume.pdf'
+                    downloadLink.download = '/docs/Grant Gorosave_Web Dev Resume(03-09-2023).pdf'
 
                     // fires a click of the link object created in this function
                     downloadLink.click();
