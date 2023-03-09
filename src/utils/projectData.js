@@ -61,7 +61,7 @@ const projects = {
             src: "/images/text-editor-pwa.png",
             alt: "porject 4"
         },
-        technologies: "Honey, love, the bear necessities",
+        technologies: "Node.js, Webpack, Workbox, JavaScript, HTML, and CSS",
         repo: "https://github.com/ggorosave/Text-Editor-PWA",
         app: "https://ggorosave-text-editor.herokuapp.com/"
     }
