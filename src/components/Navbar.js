@@ -16,7 +16,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
                 <li>
                     <a
                         className="bg-quaternary text-primary ssp text-lg md:text-xl font-semibold align-middle px-3 md:px-4 py-1 mx-1 my-2 rounded-2xl hover:bg-primary hover:text-quaternary hover:border-2 hover:border-quaternary hover:transition-colors hover:duration-150 hover:ease-out active:bg-tertiary"
-                        href="/projects"
+                        href="#/projects"
                     >
                         Projects
                     </a>
@@ -24,7 +24,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
                 <li>
                     <a
                         className="bg-quaternary text-primary ssp text-lg md:text-xl font-semibold align-middle px-3 md:px-4 py-1 mx-1 my-2 rounded-2xl hover:bg-primary hover:text-quaternary hover:border-2 hover:border-quaternary hover:transition-colors hover:duration-150 hover:ease-out active:bg-tertiary"
-                        href="/resume"
+                        href="#/resume"
                     >
                         Resume
                     </a>
@@ -32,7 +32,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
                 <li>
                     <a
                         className="bg-quaternary text-primary ssp text-lg md:text-xl font-semibold align-middle px-3 md:px-4 py-1 mx-1 my-2 rounded-2xl hover:bg-primary hover:text-quaternary hover:border-2 hover:border-quaternary hover:transition-colors hover:duration-150 hover:ease-out active:bg-tertiary"
-                        href="/contact"
+                        href="#/contact"
                     >
                         Contact
                     </a>

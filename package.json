@@ -2,7 +2,7 @@
   "name": "grantg-portfolio-v2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.grantgorosave.com",
+  "homepage": "https://www.grantgorosave.com/",
   "dependencies": {
     "@headlessui/react": "^1.7.10",
     "@heroicons/react": "^2.0.15",
