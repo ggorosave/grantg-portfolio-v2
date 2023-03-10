@@ -8,29 +8,33 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 // import pages and other components below
-import About from "./pages/About";
-import ProjectContainer from "./pages/Projects";
-import Resume from "./pages/Resume";
-import Contact from "./pages/Contact";
+import About, { aboutLoader} from "./pages/About";
+import ProjectContainer, { projectLoader } from "./pages/Projects";
+import Resume, { resumeLoader } from "./pages/Resume";
+import Contact, { contactLoader }  from "./pages/Contact";
 
 function App() {
 
   const router = createHashRouter([
     {
       path: "/",
-      element: <About />
+      element: <About />,
+      loader: aboutLoader
     },
     {
       path: "/projects",
-      element: <ProjectContainer />
+      element: <ProjectContainer />,
+      loader: projectLoader
     },
     {
       path: "/resume",
-      element: <Resume />
+      element: <Resume />,
+      loader: resumeLoader
     },
     {
       path: "/contact",
-      element: <Contact />
+      element: <Contact />,
+      loader: contactLoader
     }
   ])
 
