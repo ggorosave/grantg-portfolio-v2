@@ -2,6 +2,19 @@ const projects = {
     
     // Project 1
     p1: {
+        title: "Ocean Driven",
+        description: "A full stack MERN application in which users can list their boat for rent or book an exciting water excursion with others. I contributed to much of this website’s layout, integrated front-end components with the server-side implementation, and had a firm understanding of back-end implementation.",
+        image: {
+            src: "/images/ocean-driven_home.png",
+            alt: "web application that displays budget tables"
+        },
+        technologies: "React, Chakra-UI, Node.js, GraphQL, Apollo Server/Client, JavaScript",
+        repo: "https://github.com/mayamckinney/ocean-driven",
+        app: "https://ocean-driven.herokuapp.com/"
+    },
+    
+    //Project 2 
+    p2: {
         title: "No Budge Budget Tracker",
         description: "No Budge is full stack application that takes in user data and helps them keep track of their monthly income and expenses. I worked on this site with two others and we utilized Handlebars, Express, and Express-session to build it.",
         image: {
@@ -12,9 +25,9 @@ const projects = {
         repo: "https://github.com/ggorosave/No-Budge-Budget-Tracker",
         app: "https://no-budge.herokuapp.com/"
     },
-    
-    //Project 2 
-    p2: {
+
+    // Project 3
+    p3: {
         title: "Taco Bout It Blog",
         description: "Taco Bout It is a solo fullstack project. It's a blog site about tacos and taco-like food built with Handlebars, Express, and Express-session.",
         image: {
@@ -26,8 +39,8 @@ const projects = {
         app: "https://taco-bout-it-blog.herokuapp.com/"
     },
 
-    // Project 3
-    p3: {
+    // Project 4
+    p4: {
         title: "Vocabulary Quiz Game",
         description: "This is a short and simple vocabulary quiz game that saves the top three scores in local storage and displays them on the 'View Scores' page.",
         image: {
@@ -39,8 +52,9 @@ const projects = {
         app: "https://ggorosave.github.io/Quiz_Game/"
     },
 
-    // Project 4
-    p4: {
+    // Project 5
+    // TODO: Add new project here
+    p5: {
         title: "CinemAPIcker",
         description: "This is a helpful tool for people who enjoy movies/tv and who may want to expand their portfolio. Users can input a movie title or genre and see top rated titles with links to the streaming services that feature them.",
         image: {
@@ -50,20 +64,6 @@ const projects = {
         technologies: "HTML, CSS, JavaScript, Bluma, Third-Party APIs, jQuery",
         repo: "https://github.com/wyatthalbach15/CinemAPIcker",
         app: "https://wyatthalbach15.github.io/CinemAPIcker/"
-    },
-
-    // Project 5
-    // TODO: Add new project here
-    p5: {
-        title: "Text Editor PWA",
-        description: "Text Editor PWA is a progressive web application built with Node.js, Express, Webpack, Workbox, a whole lot of plugins, JavaScript, HTML, and CSS. The application was deployed through Heroku. The front end emulates a text editor like VSCode.",
-        image: {
-            src: "/images/text-editor-pwa.png",
-            alt: "porject 4"
-        },
-        technologies: "Node.js, Webpack, Workbox, JavaScript, HTML, and CSS",
-        repo: "https://github.com/ggorosave/Text-Editor-PWA",
-        app: "https://ggorosave-text-editor.herokuapp.com/"
     }
 };
 
