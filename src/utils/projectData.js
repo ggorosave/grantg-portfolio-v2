@@ -18,7 +18,7 @@ const projects = {
         title: "No Budge Budget Tracker",
         description: "No Budge is full stack application that takes in user data and helps them keep track of their monthly income and expenses. I worked on this site with two others and we utilized Handlebars, Express, and Express-session to build it.",
         image: {
-            src: "/images/manage-transactions.JPG",
+            src: "/images/no-budge.png",
             alt: "web application that displays budget tables"
         },
         technologies: "HTML5, CSS3, Bootstrap, JavaScript, Handlebars.js, Node.js, Express, Dotenv, Bycrypt, Charts.js",
