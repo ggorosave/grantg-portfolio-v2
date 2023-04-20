@@ -12,7 +12,7 @@ export default function ProjectCard({ project }) {
                     {/* Project Image */}
                     <figure>
                         <img
-                            className="w-72 my-5 mx-auto rounded-lg lg:w-full lg:ml-4"
+                            className="w-72 lg:min-w-[40rem] max-w-[40rem] max-h-[22rem] my-5 mx-auto rounded-lg lg:w-full lg:ml-4"
                             src={project.image.src}
                             alt={project.image.alt}
                         />
